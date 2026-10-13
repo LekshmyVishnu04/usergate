@@ -21,8 +21,7 @@ function Register() {
         var user = {
             user_name: name,
             email: email,
-            password: password,
-            password_confirmation: passwordConf
+            password: password
         }
         axios.post('https://worksheet-auth.mashupstack.com/register', user).then(response => {
             setErrorMessage('');
